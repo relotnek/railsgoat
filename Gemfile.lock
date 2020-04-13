@@ -364,7 +364,6 @@ DEPENDENCIES
   launchy
   minitest
   mysql2
-  pg
   poltergeist
   powder
   pry

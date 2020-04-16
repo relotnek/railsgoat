@@ -4,6 +4,7 @@ RUN mkdir /myapp
 WORKDIR /myapp
 ADD Gemfile /myapp/Gemfile
 ADD Gemfile.lock /myapp/Gemfile.lock
+ENV RAILS_ENV openshift
 RUN bundle install
 ADD . /myapp
 RUN chgrp -R 0 /myapp \
